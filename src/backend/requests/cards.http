@@ -1,0 +1,29 @@
+# @name Add cards
+POST http://localhost:8080/api/v1/table/cards
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4OTk5NjcsImlhdCI6MTY4ODg5OTY2Nywicm9sZV9pZCI6MX0.3VRc68M92DmCqfGbW6oYhwawZP30WBCf8kGRFNUpI7Q
+Content-Type: application/json
+
+{
+    "customer_id": 6
+}
+
+###
+# @name Get cards
+GET http://localhost:8080/api/v1/table/cards
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg5MDYwNzAsImlhdCI6MTY4ODkwNTc3MCwicm9sZV9pZCI6MX0.q3c2qQYxxQoriZF4gNHKsJ56dGgULThPaCcy6fc0gWQ
+
+###
+# @name Update cards
+PATCH http://localhost:8080/api/v1/table/cards
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjE4NDMxLCJpc3N1ZWQiOjE2ODg1NzUyMzEsInJvbGUiOjJ9.pAAun7rz90DgrQy_rnYeqg0XRc2vLKGCf9P7yv9msPk
+Content-Type: application/json
+
+{
+    "customer_card_id": 21,
+    "customer_id": 1
+}
+
+###
+# @name Delete cards
+DELETE http://localhost:8080/api/v1/table/cards/24
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjE4NDMxLCJpc3N1ZWQiOjE2ODg1NzUyMzEsInJvbGUiOjJ9.pAAun7rz90DgrQy_rnYeqg0XRc2vLKGCf9P7yv9msPk

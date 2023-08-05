@@ -1,0 +1,38 @@
+# @name Authorization unknown
+
+POST http://localhost:8080/api/v1/auth
+Content-Type: application/json
+
+{
+    "role": "unknown",
+    "password": "random"
+}
+
+###
+# @name Authorization visitor
+POST http://localhost:8080/api/v1/auth
+Content-Type: application/json
+
+{
+    "role": "visitor",
+    "password": "visitor"
+}
+
+###
+# @name Authorization admin
+POST http://localhost:8080/api/v1/auth
+Content-Type: application/json
+
+{
+    "role": "admin",
+    "password": "admin"
+}
+
+###
+# @name Refresh token
+POST http://localhost:8080/api/v1/auth/refresh
+Content-Type: application/json
+
+{
+    "token": "3a5b2b9497bc144642e8cd179b66d4e23d8fb9d60a9ac9d8a2854ec3042b9220"
+}

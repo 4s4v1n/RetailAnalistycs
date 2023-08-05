@@ -1,0 +1,36 @@
+# @name Add transaction
+POST http://localhost:8080/api/v1/table/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjYxMTI5LCJpc3N1ZWQiOjE2ODg2MTc5MjksInJvbGUiOjJ9.XDFXllebkhqPpWbSZW4CKMNojYLdYRNZXc-wPWeMyNM
+Content-Type: application/json
+
+{
+    "customer_card_id": 20,
+    "transaction_sum": 1000.5,
+    "transaction_datetime": "01.12.2020 10:51:02",
+    "transaction_store_id": 1
+}
+
+###
+# @name Get transactions
+GET http://localhost:8080/api/v1/table/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjYxMTI5LCJpc3N1ZWQiOjE2ODg2MTc5MjksInJvbGUiOjJ9.XDFXllebkhqPpWbSZW4CKMNojYLdYRNZXc-wPWeMyNM
+
+###
+# @name Update transaction
+PATCH http://localhost:8080/api/v1/table/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjYxMTI5LCJpc3N1ZWQiOjE2ODg2MTc5MjksInJvbGUiOjJ9.XDFXllebkhqPpWbSZW4CKMNojYLdYRNZXc-wPWeMyNM
+Content-Type: application/json
+
+{
+    "transaction_id": 202,
+    "customer_card_id": 2,
+    "transaction_sum": 15.3,
+    "transaction_datetime": "10.10.2020 12:51:02",
+    "transaction_store_id": 4
+}
+
+
+###
+# @name Delete transaction
+DELETE http://localhost:8080/api/v1/table/transactions/202
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjYxMTI5LCJpc3N1ZWQiOjE2ODg2MTc5MjksInJvbGUiOjJ9.XDFXllebkhqPpWbSZW4CKMNojYLdYRNZXc-wPWeMyNM

@@ -1,0 +1,35 @@
+# @name Add personal_information
+POST http://localhost:8080/api/v1/table/personal_information
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg5MDYxNDUsImlhdCI6MTY4ODkwNTg0NSwicm9sZV9pZCI6Mn0.vr0ec_cEdw4WGyi3hh8FKv1O9PZ5sMWxoLnwEYC_ziY
+Content-Type: application/json
+
+{
+    "customer_name": "Владимир",
+    "customer_surname": "Маяковский",
+    "customer_primary_email": "vm@mail.ru",
+    "customer_primary_phone": "+79131234567"
+}
+
+###
+# @name Get personal_information
+GET http://localhost:8080/api/v1/table/personal_information
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg5MDYwNzAsImlhdCI6MTY4ODkwNTc3MCwicm9sZV9pZCI6MX0.q3c2qQYxxQoriZF4gNHKsJ56dGgULThPaCcy6fc0gWQ
+
+###
+# @name Update personal_information
+PATCH http://localhost:8080/api/v1/table/personal_information
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjE0NTA4LCJpc3N1ZWQiOjE2ODg1NzEzMDgsInJvbGUiOjJ9.pYjR3KweWgZv_95fQMPhu1yRKPHugPHI25Yjej3c1a8
+Content-Type: application/json
+
+{
+    "customer_id": 21,
+    "customer_name": "Иван",
+    "customer_surname": "Ургант",
+    "customer_primary_email": "urgant@gmail.ru",
+    "customer_primary_phone": "+79131234999"
+}
+
+###
+# @name Delete personal_information
+DELETE http://localhost:8080/api/v1/table/personal_information/21
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjE0NTA4LCJpc3N1ZWQiOjE2ODg1NzEzMDgsInJvbGUiOjJ9.pYjR3KweWgZv_95fQMPhu1yRKPHugPHI25Yjej3c1a8

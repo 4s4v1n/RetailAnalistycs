@@ -1,0 +1,29 @@
+# @name Add sku_group
+POST http://localhost:8080/api/v1/table/sku_group
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIyNDE1LCJpc3N1ZWQiOjE2ODg1NzkyMTUsInJvbGUiOjJ9.2clREVGDTZ7eyMJQJCiWEszcgG_xH_1YMVBK4bdV_RI
+Content-Type: application/json
+
+{
+    "group_name": "Хлеб"
+}
+
+###
+# @name Get sku_group
+GET http://localhost:8080/api/v1/table/sku_group
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIyNDE1LCJpc3N1ZWQiOjE2ODg1NzkyMTUsInJvbGUiOjJ9.2clREVGDTZ7eyMJQJCiWEszcgG_xH_1YMVBK4bdV_RI
+
+###
+# @name Update sku_group
+PATCH http://localhost:8080/api/v1/table/sku_group
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIyNDE1LCJpc3N1ZWQiOjE2ODg1NzkyMTUsInJvbGUiOjJ9.2clREVGDTZ7eyMJQJCiWEszcgG_xH_1YMVBK4bdV_RI
+Content-Type: application/json
+
+{
+    "group_id": 21,
+    "group_name": "Йогурт"
+}
+
+###
+# @name Delete sku_group
+DELETE http://localhost:8080/api/v1/table/sku_group/21
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIyNDE1LCJpc3N1ZWQiOjE2ODg1NzkyMTUsInJvbGUiOjJ9.2clREVGDTZ7eyMJQJCiWEszcgG_xH_1YMVBK4bdV_RI

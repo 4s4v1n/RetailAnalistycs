@@ -1,0 +1,15 @@
+app:
+  name: "apg6"
+  version: "1.0.0"
+
+http:
+  port: "8080"
+
+postgres:
+  max_open_conns: 50
+  max_idle_conns: 25
+  conn_max_lifetime: "30s"
+
+jwt:
+  token_ttl: "5m"
+  refresh_ttl: "720h"

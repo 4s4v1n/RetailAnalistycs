@@ -1,0 +1,58 @@
+# @name Export personal_information
+GET http://localhost:8080/api/v1/export/personal_information
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4OTgwNTksImlhdCI6MTY4ODg5NzE1OSwicm9sZV9pZCI6MX0.zQ9oJ_3VVyTsmmSQUuem1iHTkVaF3zrdq6U_diAvDT0
+
+###
+# @name Export cards
+GET http://localhost:8080/api/v1/export/cards
+Authorization: Bearer
+
+###
+# @name Export sku_group
+GET http://localhost:8080/api/v1/export/sku_group
+Authorization: Bearer
+
+###
+# @name Export product_grid
+GET http://localhost:8080/api/v1/export/product_grid
+Authorization: Bearer
+
+###
+# @name Export stores
+GET http://localhost:8080/api/v1/export/stores
+Authorization: Bearer
+
+###
+# @name Export transactions
+GET http://localhost:8080/api/v1/export/transactions
+Authorization: Bearer
+
+###
+# @name Export checks
+GET http://localhost:8080/api/v1/export/checks
+Authorization: Bearer
+
+###
+# @name Export date_of_analysing_formation
+GET http://localhost:8080/api/v1/export/date_of_analysing_formation
+Authorization: Bearer
+
+###
+# @name Export purchase_history
+GET http://localhost:8080/api/v1/export/purchase_history
+Authorization: Bearer
+
+###
+# @name Export periods
+GET http://localhost:8080/api/v1/export/periods
+Authorization: Bearer
+
+###
+# @name Export groups
+GET http://localhost:8080/api/v1/export/groups
+Authorization: Bearer
+
+###
+# @name Export customers
+GET http://localhost:8080/api/v1/export/customers
+Authorization: Bearer

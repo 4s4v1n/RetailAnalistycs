@@ -1,0 +1,59 @@
+version: "3.9"
+
+networks:
+  dev-network:
+    driver: bridge
+
+services:
+  db:
+    image: postgres:latest
+    container_name: db
+    build:
+      context: ./db
+      dockerfile: Dockerfile
+    ports:
+      - "5434:5432"
+    restart: always
+    networks:
+      - dev-network
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=retail_analytics
+
+  backend:
+    container_name: backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - dev-network
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    restart: on-failure
+    networks:
+      - dev-network
+  
+  nginx:
+    restart: always
+    depends_on:
+      - backend
+      - frontend
+    build:
+      context: proxy
+      dockerfile: Dockerfile
+    ports:
+      - "4500:4500"
+    networks:
+      - dev-network

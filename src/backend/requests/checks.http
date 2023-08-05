@@ -1,0 +1,38 @@
+# @name Add check
+POST http://localhost:8080/api/v1/table/checks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjYxOTQ4LCJpc3N1ZWQiOjE2ODg2MTg3NDgsInJvbGUiOjJ9.4eFDgyNDhZpYfXnKsjckW_XdTBbY07h7Z48ypI9BsRg
+Content-Type: application/json
+
+{
+    "transaction_id": 200,
+    "sku_id": 7,
+    "sku_amount": 15.5,
+    "sku_sum": 20.5,
+    "sku_sum_paid": 25.5,
+    "sku_discount": 5.5
+}
+
+###
+# @name Get checks
+GET http://localhost:8080/api/v1/table/checks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg5MDYwNzAsImlhdCI6MTY4ODkwNTc3MCwicm9sZV9pZCI6MX0.q3c2qQYxxQoriZF4gNHKsJ56dGgULThPaCcy6fc0gWQ
+
+###
+# @name Update check
+PATCH http://localhost:8080/api/v1/table/checks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjYxOTQ4LCJpc3N1ZWQiOjE2ODg2MTg3NDgsInJvbGUiOjJ9.4eFDgyNDhZpYfXnKsjckW_XdTBbY07h7Z48ypI9BsRg
+Content-Type: application/json
+
+{
+    "transaction_id": 200,
+    "sku_id": 7,
+    "sku_amount": 10.1,
+    "sku_sum": 10.1,
+    "sku_sum_paid": 10.1,
+    "sku_discount": 10.1
+}
+
+###
+# @name Delete check
+DELETE http://localhost:8080/api/v1/table/checks/200/7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjYxOTQ4LCJpc3N1ZWQiOjE2ODg2MTg3NDgsInJvbGUiOjJ9.4eFDgyNDhZpYfXnKsjckW_XdTBbY07h7Z48ypI9BsRg

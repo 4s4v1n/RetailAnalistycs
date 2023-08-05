@@ -1,0 +1,18 @@
+# @name Add purchase_history
+POST http://localhost:8080/api/v1/view/purchase_history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4MjIxMTgsImlhdCI6MTY4ODgyMTIxOCwicm9sZV9pZCI6Mn0.CyfZyKDEN74bZF7qfrlJb-HBhw-v1uVQb1C6DgWye5g
+
+###
+# @name Get purchase_history
+GET http://localhost:8080/api/v1/view/purchase_history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4MjU1OTAsImlhdCI6MTY4ODgyNDY5MCwicm9sZV9pZCI6MX0.fPbiWq-86nEaYN8gwF1gm7tJocICueX0Uiy98wQUgDY
+
+###
+# @name Update purchase_history
+PATCH http://localhost:8080/api/v1/view/purchase_history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4MjIxMTgsImlhdCI6MTY4ODgyMTIxOCwicm9sZV9pZCI6Mn0.CyfZyKDEN74bZF7qfrlJb-HBhw-v1uVQb1C6DgWye5g
+
+###
+# @name Delete purchase_history
+DELETE http://localhost:8080/api/v1/view/purchase_history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4MjI0MTMsImlhdCI6MTY4ODgyMTUxMywicm9sZV9pZCI6Mn0.nQMZHo63L2kXq38iv2CcwSdwU7d7k0PyDd55KQlS7_M

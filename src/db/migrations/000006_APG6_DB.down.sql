@@ -1,0 +1,1 @@
+DROP FUNCTION IF EXISTS fnc_defining_offer_increasing_margin CASCADE;

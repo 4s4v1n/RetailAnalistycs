@@ -1,0 +1,35 @@
+# @name Add store
+POST http://localhost:8080/api/v1/table/stores
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIzMjgwLCJpc3N1ZWQiOjE2ODg1ODAwODAsInJvbGUiOjJ9.Pe6f6jW6n8Kx69B3Ujt8Tjr0c888s0KlP9qAsIKx_XA
+Content-Type: application/json
+
+{
+    "transaction_store_id": 4,
+    "sku_id": 3,
+    "sku_purchase_price": 20.5,
+    "sku_retail_price": 30.5
+}
+
+###
+# @name Get stores
+GET http://localhost:8080/api/v1/table/stores
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIzMjgwLCJpc3N1ZWQiOjE2ODg1ODAwODAsInJvbGUiOjJ9.Pe6f6jW6n8Kx69B3Ujt8Tjr0c888s0KlP9qAsIKx_XA
+
+###
+# @name Update store
+PATCH http://localhost:8080/api/v1/table/stores
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIzMjgwLCJpc3N1ZWQiOjE2ODg1ODAwODAsInJvbGUiOjJ9.Pe6f6jW6n8Kx69B3Ujt8Tjr0c888s0KlP9qAsIKx_XA
+Content-Type: application/json
+
+{
+  "transaction_store_id": 4,
+  "sku_id": 3,
+  "sku_purchase_price": 25.4,
+  "sku_retail_price": 35.4
+}
+
+
+###
+# @name Delete store
+DELETE http://localhost:8080/api/v1/table/stores/4/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIzMjgwLCJpc3N1ZWQiOjE2ODg1ODAwODAsInJvbGUiOjJ9.Pe6f6jW6n8Kx69B3Ujt8Tjr0c888s0KlP9qAsIKx_XA

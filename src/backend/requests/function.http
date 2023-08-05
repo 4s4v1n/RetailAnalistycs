@@ -1,0 +1,46 @@
+# @name Get json fnc_growth_of_average_check
+GET http://localhost:8080/api/v1/function/growth_of_average_check?
+    method=PERIOD&first=01.01.2018&last=12.12.2022&number=1000&coefficient=1.45&
+    max_churn_rate=12&max_discount_share=1&margin_share=100
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODk0MDE3NjksImlhdCI6MTY4OTQwMTQ2OSwicm9sZV9pZCI6MX0.Nlz4BgdADti1sBlo7-NnZbg74L3HI7JHtckrnQTdmk8
+Accept: application/json
+
+###
+# @name Get csv fnc_growth_of_average_check
+GET http://localhost:8080/api/v1/function/growth_of_average_check?
+    method=PERIOD&first=01.01.2018&last=12.12.2022&number=1000&coefficient=1.45&
+    max_churn_rate=12&max_discount_share=1&margin_share=100
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODk0MDE3NjksImlhdCI6MTY4OTQwMTQ2OSwicm9sZV9pZCI6MX0.Nlz4BgdADti1sBlo7-NnZbg74L3HI7JHtckrnQTdmk8
+Accept: text/csv; charset=UTF-8
+
+###
+# @name Get json fnc_defining_offer_increasing_frequency_visits
+GET http://localhost:8080/api/v1/function/defining_offer_increasing_frequency_visits?
+    first=01.04.2018&last=22.04.2022&value_transaction=30&
+    max_churn_rate=12&max_discount_share=1&margin_share=100
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODk0MDE3NjksImlhdCI6MTY4OTQwMTQ2OSwicm9sZV9pZCI6MX0.Nlz4BgdADti1sBlo7-NnZbg74L3HI7JHtckrnQTdmk8
+Accept: application/json
+
+###
+# @name Get csv fnc_defining_offer_increasing_frequency_visits
+GET http://localhost:8080/api/v1/function/defining_offer_increasing_frequency_visits?
+    first=01.04.2018&last=22.04.2022&value_transaction=30&
+    max_churn_rate=12&max_discount_share=1&margin_share=100
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4ODkxMDIsImlhdCI6MTY4ODg4ODIwMiwicm9sZV9pZCI6Mn0.LJyn6EcU5j23tHowwcbsJZUCKOe_zzTLUb_TdpQDd8g
+Accept: text/csv; charset=UTF-8
+
+###
+# @name Get json fnc_defining_offer_increasing_margin
+GET http://localhost:8080/api/v1/function/defining_offer_increasing_margin?
+    count_group=10&max_churn_rate=10&max_stability_index=10&
+    max_index_sku=0.5&margin_share=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODk0MDE3NjksImlhdCI6MTY4OTQwMTQ2OSwicm9sZV9pZCI6MX0.Nlz4BgdADti1sBlo7-NnZbg74L3HI7JHtckrnQTdmk8
+Accept: application/json
+
+###
+# @name Get csv fnc_defining_offer_increasing_margin
+GET http://localhost:8080/api/v1/function/defining_offer_increasing_margin?
+    count_group=10&max_churn_rate=10&max_stability_index=10&
+    max_index_sku=0.5&margin_share=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4ODkxMDIsImlhdCI6MTY4ODg4ODIwMiwicm9sZV9pZCI6Mn0.LJyn6EcU5j23tHowwcbsJZUCKOe_zzTLUb_TdpQDd8g
+Accept: text/csv; charset=UTF-8

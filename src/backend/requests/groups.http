@@ -1,0 +1,17 @@
+# @name Add groups
+POST http://localhost:8080/api/v1/view/groups
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4MjU1OTAsImlhdCI6MTY4ODgyNDY5MCwicm9sZV9pZCI6MX0.fPbiWq-86nEaYN8gwF1gm7tJocICueX0Uiy98wQUgDY
+###
+# @name Get groups
+GET http://localhost:8080/api/v1/view/groups
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4MjU3MjUsImlhdCI6MTY4ODgyNDgyNSwicm9sZV9pZCI6Mn0.N1rbf_0IjbI5db7PfC0Pn7LcBzmgYYgyeUXfh5DbkQE
+
+###
+# @name Update groups
+PATCH http://localhost:8080/api/v1/view/groups
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4MjUzMzcsImlhdCI6MTY4ODgyNDQzNywicm9sZV9pZCI6Mn0.P_MpQLUDba0YB1TXETbqW87RoGAaebq1IfIDj0EuAf8
+
+###
+# @name Delete groups
+DELETE http://localhost:8080/api/v1/view/groups
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODg4MjU1OTAsImlhdCI6MTY4ODgyNDY5MCwicm9sZV9pZCI6MX0.fPbiWq-86nEaYN8gwF1gm7tJocICueX0Uiy98wQUgDY

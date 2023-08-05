@@ -1,0 +1,31 @@
+# @name Add product_grid
+POST http://localhost:8080/api/v1/table/product_grid
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIyODU1LCJpc3N1ZWQiOjE2ODg1Nzk2NTUsInJvbGUiOjJ9.qsHqxWOySxNtafWpZpFEVTW8Nu4lu3WWSUSZhLZ6O2g
+Content-Type: application/json
+
+{
+    "sku_name": "ООО шляпа",
+    "group_id": 1
+}
+
+###
+# @name Get product_grid
+GET http://localhost:8080/api/v1/table/product_grid
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIyODU1LCJpc3N1ZWQiOjE2ODg1Nzk2NTUsInJvbGUiOjJ9.qsHqxWOySxNtafWpZpFEVTW8Nu4lu3WWSUSZhLZ6O2g
+
+###
+# @name Update product_grid
+PATCH http://localhost:8080/api/v1/table/product_grid
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIyODU1LCJpc3N1ZWQiOjE2ODg1Nzk2NTUsInJvbGUiOjJ9.qsHqxWOySxNtafWpZpFEVTW8Nu4lu3WWSUSZhLZ6O2g
+Content-Type: application/json
+
+{
+    "sku_id": 21,
+    "sku_name": "ООО ботинок",
+    "group_id": 2
+}
+
+###
+# @name Delete product_grid
+DELETE http://localhost:8080/api/v1/table/product_grid/21
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVkIjoxNjg4NjIyODU1LCJpc3N1ZWQiOjE2ODg1Nzk2NTUsInJvbGUiOjJ9.qsHqxWOySxNtafWpZpFEVTW8Nu4lu3WWSUSZhLZ6O2g
